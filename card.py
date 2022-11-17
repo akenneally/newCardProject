@@ -1,10 +1,10 @@
 import random
 
+class Value:
+
+class Suit:
 
 class Card:
-    value =
-    suit =
-
     def __init__(self, value, suit):
         self.cardValue = value
         self.cardSuit = suit
