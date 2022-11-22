@@ -13,18 +13,18 @@ class Deck:
 
     def shuffle_deck(self):
         random.shuffle(self.cards)
+
 # create deck of cards
 
     def create_deck(self):
         for suit in ["H", "D", "C", "S"]:
-            for value in range (1, 14):
+            for value in range(1, 14):
                 new_card = Card(value, suit)
                 self.cards.append(new_card)
 
     def print_deck(self):
         for card in self.cards:
             print(card.cardValue, card.cardSuit)
-
 
     def get_card(self):
         pass
