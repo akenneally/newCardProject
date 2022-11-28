@@ -27,13 +27,17 @@ class Deck:
             print(card.cardValue, card.cardSuit)
 
     def get_card(self):
-        pass
+        return self.cards.pop()
 
 
 new_deck = Deck()
 new_deck.create_deck()
 new_deck.shuffle_deck()
 new_deck.print_deck()
+new_card = Card()
+new_card.get_card()
+new_card.show()
+
 
 
 
