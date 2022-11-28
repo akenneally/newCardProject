@@ -1,0 +1,5 @@
+Feature: testing draw card method
+    Scenario: tests the card is drawn correctly from deck
+        Given a new deck of cards
+        When a user draws a card
+        Then the top card of the deck will be removed
