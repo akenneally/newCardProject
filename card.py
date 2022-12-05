@@ -6,6 +6,9 @@ class Card:
         self.cardValue = value
         self.cardSuit = suit
 
+    def print_card(self):
+        print("The card you have drawn is the {} of {}".format(self.cardValue, self.cardSuit))
+
 
 class Deck:
     def __init__(self):
@@ -17,7 +20,7 @@ class Deck:
 # create deck of cards
 
     def create_deck(self):
-        for suit in ["H", "D", "C", "S"]:
+        for suit in ["Hearts", "Diamonds", "Clubs", "Spades"]:
             for value in range(1, 14):
                 new_card = Card(value, suit)
                 self.cards.append(new_card)
@@ -38,6 +41,7 @@ new_deck.create_deck()
 new_deck.shuffle_deck()
 new_deck.print_deck()
 drawn_card = new_deck.get_card()
+drawn_card.print_card()
 
 
 
