@@ -30,19 +30,17 @@ class Deck:
 # print top card
 # remove top card from deck
     def get_card(self):
-        for card in self.cards:
-            top_card = self.cards[0]
-
-        print(top_card)
+        return self.cards.pop()
 
 
 new_deck = Deck()
 new_deck.create_deck()
 new_deck.shuffle_deck()
 new_deck.print_deck()
-drawn_card = Card()
-drawn_card.get_card()
-drawn_card.print_card()
+drawn_card = new_deck.get_card()
+
+
+
 
 
 
